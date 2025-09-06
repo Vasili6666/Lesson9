@@ -9,8 +9,12 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
+    //testImplementation 'com.codeborne:pdf-test:1.8.1'
+    //testImplementation 'com.codeborne:xls-test:1.7.0'
+    testImplementation 'com.opencsv:opencsv:5.9'
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'com.codeborne:pdf-test:2.0.0'
     testImplementation('com.codeborne:xls-test:1.7.2') {

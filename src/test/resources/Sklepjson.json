@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "imie": "Jan",
+    "nazwisko": "Kowalski",
+    "email": "jan.kowalski@email.pl",
+    "wiek": 28,
+    "aktywny": true,
+    "zamowienia": ["Laptop", "Mysz"]
+  },
+  {
+    "id": 2,
+    "imie": "Anna",
+    "nazwisko": "Nowak", 
+    "email": "anna.nowak@email.pl",
+    "wiek": 32,
+    "aktywny": false,
+    "zamowienia": ["Klawiatura", "Monitor"]
+  },
+  {
+    "id": 3,
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "email": "piotr.wisniewski@email.pl",
+    "wiek": 25,
+    "aktywny": true,
+    "zamowienia": ["Mysz", "Klawiatura", "Monitor"]
+  }
+]

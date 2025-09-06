@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'guru.qa'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'com.codeborne:pdf-test:2.0.0'
+    testImplementation('com.codeborne:xls-test:1.7.2') {
+        exclude group: 'org.apache.poi', module: 'poi'
+        exclude group: 'org.apache.poi', module: 'poi-ooxml'
+    }
+    testImplementation 'org.apache.poi:poi:5.4.1'
+    testImplementation 'org.apache.poi:poi-ooxml:5.4.1'
+    testImplementation("com.fasterxml.jackson.core:jackson-core:2.13.1")
+}
+
+test {
+    useJUnitPlatform()
+}

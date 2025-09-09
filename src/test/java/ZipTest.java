@@ -105,7 +105,7 @@ public class ZipTest {
         try (CSVReader reader = new CSVReader(new InputStreamReader(stream))) {
             List<String[]> content = reader.readAll();
 
-            // Убираем BOM из первой строки если он есть
+
             String[] firstRow = content.get(0);
             if (firstRow[0].startsWith("\uFEFF")) {
                 firstRow[0] = firstRow[0].substring(1);
